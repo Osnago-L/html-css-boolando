@@ -29,7 +29,7 @@ main{
     margin-top: 20px;
 } 
 
-/* ROWS DIVS FLOATS, POSITIONING NAD IMAGES */
+/* ROWS DIVS FLOATS, POSITIONING AND IMAGES */
 .row_top>div,.row_bottom>div {
     float: left;
     width: 32%;
@@ -38,13 +38,23 @@ main{
 .row_top>div>div:nth-child(1),.row_bottom>div>div:nth-child(1) {
     position: relative;
 }
-
+    
 img{
     object-fit: cover;
     height: 400px;
     width: 100%;
 }
 
+.off{
+    display: none;
+}
+
+.hover:hover .on{
+    display:none;
+}
+.hover:hover .off{
+    display:block;
+}
 /* HEART POSITIONING AND HOVER ACTIONS */
 .heart{
     height: 30px;
