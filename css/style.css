@@ -35,7 +35,7 @@ main{
     width: 32%;
     overflow: hidden; 
 }
-.row_top>div>div:nth-child(1),.row_bottom>div>div:nth-child(1) {
+.hover {
     position: relative;
 }
     
