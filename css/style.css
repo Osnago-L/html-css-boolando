@@ -21,8 +21,8 @@ main{
 }
 
 /* MARGINI ROWS */
-.row_top div:nth-child(2),.row_bottom div:nth-child(2){
-    margin: 0px 10px 0 10px;
+.row_top>div:nth-child(2),.row_bottom>div:nth-child(2){
+    margin: 0px 15px 0 15px;
 }
 
 .row_top,.row_bottom{
@@ -33,14 +33,15 @@ main{
 .row_top>div,.row_bottom>div {
     float: left;
     width: 32%;
-    height: 400px;
-    overflow: hidden;
-    position: relative  
+    overflow: hidden; 
+}
+.row_top>div>div:nth-child(1),.row_bottom>div>div:nth-child(1) {
+    position: relative;
 }
 
 img{
     object-fit: cover;
-    height: 100%;
+    height: 400px;
     width: 100%;
 }
 
@@ -68,27 +69,41 @@ img{
 
 }
 .discount::after{
-    content: "-50%";
-    background-color: red;
-    color: white;
-    font-size: 6px;
-    padding: 4px 5px;
-    margin-right: 5px;
-    font-weight: bold;
+        content: "-50%";
+        background-color: red;
+        color: white;
+        font-size: 6px;
+        padding: 4px 5px;
+        margin-right: 5px;
+        font-weight: bold;
     
 }
  .eco::after{
-    content: "Sostenibilita'";
-    background-color: green;
-    color: white;
-    font-size: 6px;
-    padding: 4px 5px;
-    font-weight: bold;
+        content: "Sostenibilita'";
+        background-color: green;
+        color: white;
+        font-size: 6px;
+        padding: 4px 5px;
+        font-weight: bold;
     
 }
 /* BRANDING AND PRICES */
 
- .brand{
-   color: black;
+.brand{
+     font-size: 8px ;
+}
+.name{
+     font-size: 10px ;
+    
+}
+.new_price{
+     color: red;
+     font-size: 8px;
+     margin-right: 5px ;
+
+}
+.old_price{
+    text-decoration:line-through;
+    font-size: 8px ;
 }
 
