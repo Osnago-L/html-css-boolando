@@ -1,7 +1,9 @@
+/* MAIN SETTINGS */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     margin: auto;
@@ -10,32 +12,39 @@ body{
 main{
     padding: 5px 10px;
 }
+
+/* GLOBAL CLASSES */
 .clear-fix::after{
  content: "";
  clear: both;
  display: table;
 }
-.row_top,.row_bottom{
-    margin-top: 20px;
-} 
 
-img{
-object-fit: cover;
-height: 100%;
-width: 100%;
-}
-
+/* MARGINI ROWS */
 .row_top div:nth-child(2),.row_bottom div:nth-child(2){
     margin: 0px 10px 0 10px;
 }
 
+.row_top,.row_bottom{
+    margin-top: 20px;
+} 
+
+/* ROWS DIVS FLOATS, POSITIONING NAD IMAGES */
 .row_top div,.row_bottom div {
     float: left;
     width: 32%;
     height: 400px;
     overflow: hidden;
-    position: relative;
+    position: relative  
 }
+
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* HEART POSITIONING AND HOVER ACTIONS */
 .heart{
     height: 30px;
     width: 30px;
@@ -46,5 +55,32 @@ width: 100%;
     top: 20px;
     right: 0;
     background-color: white;
+    cursor: pointer;
+}
+.heart:hover{
+    color: red;
+}
+/* PRICE FLAGS AND INFO */
+.discount::after{
+    content: "-50%";
+    background-color: red;
+    color: white;
+    font-size: 8px;
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: inline-block;
+}
+.eco::after{
+    content: "-50%";
+    background-color: red;
+    color: white;
+    font-size: 8px;
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: inline-block;
 }
 
