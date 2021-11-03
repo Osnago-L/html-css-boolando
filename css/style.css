@@ -45,7 +45,7 @@ img{
     width: 100%;
 }
 
-.off{
+ .off{
     display: none;
 }
 
@@ -54,7 +54,7 @@ img{
 }
 .hover:hover .off{
     display:block;
-}
+} 
 /* ***GLOBAL*** HEART POSITIONING AND HOVER ACTIONS */
 .hover::after{
     content: "\2661";
@@ -72,6 +72,8 @@ img{
 .hover:hover::after{
     color: red;
 }
+
+
 /*  DISCOUNT AND FLAG */
 .flags{
     position: absolute;
