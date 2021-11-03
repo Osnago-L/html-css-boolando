@@ -55,8 +55,9 @@ img{
 .hover:hover .off{
     display:block;
 }
-/* HEART POSITIONING AND HOVER ACTIONS */
-.heart{
+/* ***GLOBAL*** HEART POSITIONING AND HOVER ACTIONS */
+.hover::after{
+    content: "\2661";
     height: 30px;
     width: 30px;
     text-align: center;
@@ -68,31 +69,41 @@ img{
     background-color: white;
     cursor: pointer;
 }
-.heart:hover{
+.hover:hover::after{
     color: red;
 }
-/* DISCOUNT FLAGS AND INFO */
+/*  DISCOUNT AND FLAG */
 .flags{
     position: absolute;
     bottom: 20px;
     left: 0;
 
 }
-.discount::after{
+.discount50::after{
         content: "-50%";
         background-color: red;
         color: white;
-        font-size: 6px;
+        font-size: 8px;
         padding: 4px 5px;
         margin-right: 5px;
         font-weight: bold;
     
 }
+.discount30::after{
+    content: "-30%";
+    background-color: red;
+    color: white;
+    font-size: 8px;
+    padding: 4px 5px;
+    margin-right: 5px;
+    font-weight: bold;
+
+}
  .eco::after{
         content: "Sostenibilita'";
         background-color: green;
         color: white;
-        font-size: 6px;
+        font-size: 8px;
         padding: 4px 5px;
         font-weight: bold;
     
